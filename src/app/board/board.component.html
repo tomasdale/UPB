@@ -1,0 +1,16 @@
+<div class="container" *ngIf="ifNotSizeReturnToHome()">
+  <div class="row" *ngFor="let x of board">
+    <div
+      [id]="y.id"
+      [class.column]="true"
+      [class.fas]="y.piece ? true : false"
+      [class.fa-chess-queen]="y.piece ? y.piece.pieceType === 'black' : false"
+      [class.fa-chess-rook]="y.piece ? y.piece.pieceType === 'white' : false"
+      [class.background-black]="y.background === 'black'"
+      [class.background-white]="y.background === 'white'"
+      [class.background-clicked-piece]="y.isPossibleMove"
+      (click)="makeMove(y)"
+      *ngFor="let y of x"
+    ></div>
+  </div>
+</div>

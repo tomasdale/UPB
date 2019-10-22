@@ -1,0 +1,33 @@
+.container {
+  height: fit-content;
+  width: fit-content;
+  border: 1px solid black;
+}
+
+.column {
+  text-align: center;
+  vertical-align: middle;
+  line-height: 80px;
+  width: 80px;
+}
+.row {
+  height: 80px;
+}
+
+.fa-chess-queen {
+    color: green;
+    font-size: 50px;
+}
+.fa-chess-rook {
+    color: blue;
+    font-size: 50px;
+}
+.background-black {
+  background-color: black;
+}
+.background-white {
+  background-color: white;
+}
+.background-clicked-piece {
+  background-color: rgba(78, 67, 172, 0.4);
+}
